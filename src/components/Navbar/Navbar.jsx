@@ -2,7 +2,7 @@ import { Search, ShoppingCartOutlined} from '@material-ui/icons';
 import { Badge } from '@material-ui/core';
 import React from 'react';
 import styled from 'styled-components';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Container = styled.div`
    height: 55px;
@@ -82,21 +82,19 @@ export default function () {
                         Qazak-store
                     </Logo>
                 </Center>
-                <Switch>
-                    <Right>
-                        <MenuItem>
-                            <Route path='signup' />
-                        </MenuItem>
-                        <MenuItem>
-                            SIGN IN
-                        </MenuItem>
-                        <MenuItem>
-                            <Badge badgeContent={80} color="primary">
-                                <ShoppingCartOutlined/>
-                            </Badge>
-                        </MenuItem>
-                    </Right>
-                </Switch>
+                        <Right>
+                            <MenuItem>
+                                <Link to='signup'>REGISTER</Link>
+                            </MenuItem>
+                            <MenuItem>
+                                <Link to='login'>LOGIN</Link>
+                            </MenuItem>
+                            <MenuItem>
+                                <Badge badgeContent={80} color="primary">
+                                    <ShoppingCartOutlined/>
+                                </Badge>
+                            </MenuItem>
+                        </Right>
             </Wrapper>
         </Container>
     )
