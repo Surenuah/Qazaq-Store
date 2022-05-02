@@ -22,13 +22,14 @@ export const sliderItems = [
     },
 ]
 
-export const categories = [{
+export const categories = [
+    {
     id: 1,
     img: "https://o-tendencii.com/uploads/posts/2022-02/1644810379_25-o-tendencii-com-p-obraz-dorogaya-odezhda-foto-27.jpg",
     title: "SALE 40%",
     description: "DO NOT MISS THIS OFFER",
     bg: "f5fafd"
-},
+    },
     {
         id: 2,
         img: "https://saks.kz/uploads/user_8/2018_02_11__03_49_20__798.jpg",

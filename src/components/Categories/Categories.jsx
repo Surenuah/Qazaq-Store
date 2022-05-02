@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import { categories } from '../data'
+import { categories } from '../../data'
 import { CategoriesItems } from '../CategoriesItems/CategoriesItems'
 
 const Container = styled.div`

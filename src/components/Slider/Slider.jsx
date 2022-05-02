@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {ArrowLeftOutlined, ArrowRightOutlined} from '@material-ui/icons'
 import styled from "styled-components"
-import {sliderItems} from "../data"
+import {sliderItems} from "../../data"
 
 const Container = styled.div`
    width: 100%; 
@@ -35,7 +35,6 @@ const Wrapper = styled.div`
   display: flex;
   transform: translateX(${props=>props.slideIndex * - 100}vw);
   transition: all 1.5s ease;
-
 `
 
 const Slide = styled.div`
