@@ -1,5 +1,5 @@
 import { Search, ShoppingCartOutlined} from '@material-ui/icons';
-import { Badge } from '@material-ui/core';
+import {Badge} from '@material-ui/core';
 import React from 'react';
 import styled from 'styled-components';
 import {Link} from "react-router-dom";
@@ -39,7 +39,6 @@ const SearchContainer = styled.div`
 const Input = styled.input`
    border: none;
    &:focus{outline: none}
-
 `
 
 const Center = styled.div`
@@ -84,10 +83,10 @@ export default function () {
                 </Center>
                         <Right>
                             <MenuItem>
-                                <Link to='signup'>REGISTER</Link>
+                                    <Link to='/signup'>REGISTER</Link>
                             </MenuItem>
                             <MenuItem>
-                                <Link to='login'>LOGIN</Link>
+                                    <Link to='/login'>SIGN IN</Link>
                             </MenuItem>
                             <MenuItem>
                                 <Badge badgeContent={80} color="primary">
